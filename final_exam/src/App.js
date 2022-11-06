@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import AppStyles from "./App.module.css";
+import Counter from "./components/Counter";
+import Counter2 from "./components/Counter2";
+import Navbar from "./components/Navbar";
+import NotFound from "./components/NotFound";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={AppStyles.App}>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Counter />} />
+        <Route path="/useReducer" element={<Counter2 />}></Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }

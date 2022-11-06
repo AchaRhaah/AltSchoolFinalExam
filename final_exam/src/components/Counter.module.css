@@ -1,0 +1,84 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+.title {
+    color: #fff;
+    font-size: 2em;
+    margin: 2em;
+}
+.container1 {
+    width: 22rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #252525;
+    align-self: center;
+    border-radius: 8em;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.operationContainer,
+.countContainer {
+    width: 33.333%;
+}
+
+.operationContainer {
+    width: 6.5em;
+    height: 6.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #252525;
+    border: none;
+    transition: ease-in 0.4s;
+}
+
+.countContainer {
+    width: 7.5em;
+    height: 7.5em;
+    background: #3B3B3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.operation,
+.count {
+    font-family: 'Poppins';
+    font-weight: 100;
+    color: #f8f7ff;
+    font-size: 2em;
+
+}
+
+.operation {
+    cursor: pointer;
+}
+
+.operationContainer:hover {
+    background: #010101;
+}
+
+.count {
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+.input {
+    outline: none;
+    border: none;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    font-size: 1.65em;
+    padding: 0.4em;
+}
